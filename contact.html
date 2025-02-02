@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Passport Reservation</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="notification-bar">
+        Passport processing time is currently 5 working days.
+    </div>
+    <header>
+        <div class="logo">
+            <img src="https://via.placeholder.com/150x50?text=Logo" alt="Website Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./service.html">Services</a></li>
+                <li><a href="./faq.html">FAQs</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="login">Login</button>
+            <button class="signup">Sign Up</button>
+        </div>
+    </header>
+    <section class="hero" id="contact">
+        <h1>Contact Us</h1>
+        <p>We're here to help with all your passport reservation needs.</p>
+    </section>
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <div class="details">
+            <div class="detail">
+                <h3>Email</h3>
+                <p><a href="mailto:support@passportservices.com">support@passportservices.com</a></p>
+            </div>
+            <div class="detail">
+                <h3>Phone</h3>
+                <p><a href="tel:+91 83203 83030">+91 83203 83030</a></p>
+            </div>
+            <div class="detail">
+                <h3>Office Address</h3>
+                <p>Passport Services HQ, <br>123 Main Street, Suite, Sector V<br>Kolkata, India.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact-form">
+        <h2>Get in Touch</h2>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+                <option value="general">General Inquiry</option>
+                <option value="technical">Technical Support</option>
+                <option value="feedback">Service Feedback</option>
+            </select>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <label for="attachment">Attachment (Optional)</label>
+            <input type="file" id="attachment" name="attachment">
+            
+            <div class="g-recaptcha" data-sitekey="your_site_key_here"></div>
+            
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </section>
+    <button class="live-chat" style="position: fixed; bottom: 20px; right: 20px; background-color: #007bff; color: white; border: none; border-radius: 50%; width: 50px; height: 50px; cursor: pointer;">
+        <img src="./icons/chatbox-ellipses-outline.svg" alt="chat">
+    </button>
+    <section class="social-media">
+        <h2>Follow Us</h2>
+        <div class="icons">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="./icons/logo-facebook.svg" alt="Facebook Logo">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="./icons/logo-twitter.svg" alt="Twitter Logo">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="./icons/logo-instagram.svg" alt="Instagram Logo">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="./icons/logo-linkedin.svg" alt="LinkedIn Logo">
+            </a>
+        </div>
+    </section>
+    
+    <section class="faq-links">
+        <h2>Quick Links</h2>
+        <p>Looking for quick answers? <a href="#faqs">Visit our FAQ page.</a></p>
+    </section>
+    <section class="operating-hours">
+        <h2>Operating Hours</h2>
+        <p>Our support team is available:<br>Monday to Friday: 9:00 AM – 6:00 PM<br>Saturday: 10:00 AM – 4:00 PM<br>Sunday: Closed</p>
+    </section>
+    <section class="map">
+        <h2>Find Us</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.6394656760355!2d88.4259374!3d22.5760075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f970ae9a2e19b5%3A0x16c43b9069f4b159!2sTechno%20India%20University!5e0!3m2!1sen!2sin!4v1706789234567" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <section class="call-to-action">
+        <h2>Have a question or need assistance?</h2>
+        <p>We're just a click away.</p>
+        <button onclick="document.querySelector('.contact-form form').scrollIntoView({ behavior: 'smooth' });">Get in Touch</button>
+    </section>
+    <footer>
+        <div class="footer-links">
+            <a href="./index.html">Home</a>
+            <a href="./service.html">Services</a>
+            <a href="./faq.html">FAQs</a>
+            <a href="./contact.html">Contact Us</a>
+        </div>
+        <div class="contact-info">
+            <p>Email: info@passportreservation.com</p>
+            <p>Phone: +91 29194 04829</p>
+        </div>
+        
+    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>

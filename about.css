@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+.notification-bar {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logo img {
+    height: 50px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #007bff;
+}
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+.auth-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.auth-buttons .login {
+    background-color: #007bff;
+    color: white;
+}
+.auth-buttons .login:hover {
+    background-color: #0056b3;
+}
+.auth-buttons .signup {
+    background-color: #fff;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+.auth-buttons .signup:hover {
+    background-color: #e0f7fa;
+}
+.hero {
+    position: relative;
+    height: 400px;
+    background-image: url(./image/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px; /* Responsive padding */
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+}
+
+.hero h1,
+.hero p {
+    position: relative; /* Ensures text stays above the overlay */
+    z-index: 1;
+}
+.hero h1 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Soft shadow for readability */
+    color: #007BFF;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+}
+.introduction, .mission-vision, .why-choose-us, .our-journey, .meet-the-team, .customer-testimonials, .call-to-action {
+    padding: 50px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.introduction h2, .mission-vision h2, .why-choose-us h2, .our-journey h2, .meet-the-team h2, .customer-testimonials h2, .call-to-action h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.mission-vision p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.why-choose-us .benefits {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.why-choose-us .benefit {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.why-choose-us .benefit:hover {
+    transform: translateY(-10px);
+}
+.why-choose-us .benefit i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+.our-journey {
+    position: relative;
+    padding: 50px 0;
+}
+.our-journey::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #007bff;
+    z-index: -1;
+}
+.our-journey .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.our-journey .timeline-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 40px 0;
+    width: 100%;
+}
+.our-journey .timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.our-journey .timeline-item.right {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+.our-journey .timeline-item.left {
+    flex-direction: row;
+    text-align: left;
+}
+.our-journey .timeline-item .content {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    padding: 20px;
+    margin-left: 30px;
+}
+.our-journey .timeline-item.right .content {
+    margin-left: 0;
+    margin-right: 30px;
+}
+.our-journey .timeline-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.our-journey .timeline-item p {
+    font-size: 16px;
+}
+.meet-the-team .team-members {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.meet-the-team .member {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.meet-the-team .member:hover {
+    transform: translateY(-10px);
+}
+.meet-the-team .member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.customer-testimonials .testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.customer-testimonials .testimonial {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+}
+.customer-testimonials .testimonial img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.call-to-action {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+.call-to-action button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #007bff;
+    transition: background-color 0.3s;
+}
+.call-to-action button:hover {
+    background-color: #e0f7fa;
+}
+footer {
+    color: #fff;
+    padding: 40px 40px;
+    text-align: center;
+    background-image: url(./image/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-color: rgba(0, 0, 0, 0.5); /* Black tint with 50% opacity */
+    background-blend-mode: darken;
+}
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+footer .footer-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+footer .footer-links a:hover {
+    color: #007bff;
+}
+footer .contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+footer .social-icons {
+    margin-top: 20px;
+}
+footer .social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    transition: color 0.3s;
+}
+footer .social-icons a:hover {
+    color: #007bff;
+}
+@media (max-width: 768px) {
+    .hero {
+        height: 400px;
+        padding-top: 100px;
+    }
+    .hero h1 {
+        font-size: 28px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .why-choose-us .benefit {
+        width: 300px;
+    }
+    .our-journey .timeline-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .our-journey .timeline-item::before {
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .our-journey .timeline-item.right, .our-journey .timeline-item.left {
+        flex-direction: column;
+        text-align: center;
+    }
+    .our-journey .timeline-item .content {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+    .meet-the-team .member {
+        width: 300px;
+    }
+    .customer-testimonials .testimonial {
+        width: 300px;
+    }
+}

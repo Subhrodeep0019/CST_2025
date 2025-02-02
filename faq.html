@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Passport Reservation</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <div class="notification-bar">
+        Passport processing time is currently 5 working days.
+    </div>
+    <header>
+        <div class="logo">
+            <img src="./image/passport_logo.jpg" alt="Website Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./service.html">Services</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="login">Login</button>
+            <button class="signup">Sign Up</button>
+        </div>
+    </header>
+    <section class="hero" id="faqs">
+        <h1>Frequently Asked Questions (FAQ)</h1>
+        <p>Find answers to the most common questions about our services.</p>
+    </section>
+    <section class="search-bar">
+        <input type="text" placeholder="Search for answers...">
+    </section>
+    <section class="faq-section">
+        <div class="faq-category">
+            <h3>General Questions</h3>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <h4>What is a passport reservation system?</h4>
+                    <p>A passport reservation system is an online platform where you can apply for, renew, or track your passport application with ease.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do I need an account to use the service?</h4>
+                    <p>Yes, creating an account is necessary to securely save your application details and track your progress.</p>
+                </div>
+            </div>
+        </div>
+        <div class="faq-category">
+            <h3>New Passport Application</h3>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <h4>What documents are required for a new passport application?</h4>
+                    <p>You will need proof of identity, proof of address, and proof of date of birth, among other documents. Check our detailed document checklist for more information.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How long does it take to get a new passport?</h4>
+                    <p>The processing time varies but typically takes <strong>7–10 working days</strong> after your appointment.</p>
+                </div>
+            </div>
+        </div>
+        <div class="faq-category">
+            <h3>Passport Renewal</h3>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <h4>When should I renew my passport?</h4>
+                    <p>It’s recommended to renew your passport at least 6 months before its expiration date.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I renew my passport if it’s already expired?</h4>
+                    <p>Yes, you can renew an expired passport, but additional documents may be required depending on how long it’s been expired.</p>
+                </div>
+            </div>
+        </div>
+        <div class="faq-category">
+            <h3>Appointment and Scheduling</h3>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <h4>How do I schedule an appointment?</h4>
+                    <p>Log in to your account, select the service you need, and choose a date and time convenient for you.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I reschedule my appointment?</h4>
+                    <p>Yes, you can reschedule your appointment through your account. Changes must be made at least 24 hours in advance.</p>
+                </div>
+            </div>
+        </div>
+        <div class="faq-category">
+            <h3>Technical Support</h3>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <h4>I forgot my password. How do I reset it?</h4>
+                    <p>Click on the <strong>Forgot Password</strong> link on the login page and follow the instructions to reset your password.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What should I do if the website is not loading properly?</h4>
+                    <p>Ensure you have a stable internet connection and try refreshing the page. If the issue persists, contact our support team.</p>
+                </div>
+            </div>
+        </div>
+        <div class="faq-category">
+            <h3>Fees and Payments</h3>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <h4>What are the fees for your services?</h4>
+                    <p>Our fees depend on the type of service. Visit our Services page for a detailed pricing breakdown.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What payment methods do you accept?</h4>
+                    <p>We accept credit cards, debit cards, and digital payment platforms like PayPal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-us">
+        <p>Can’t find the answer you’re looking for? Contact our support team.</p>
+        <button onclick="window.location.href='#contact'">Contact Us</button>
+    </section>
+    <section class="call-to-action">
+        <p>Ready to reserve your passport? Begin your application now!</p>
+        <button onclick="window.location.href='#home'">Get Started</button>
+    </section>
+    <footer>
+        <div class="footer-links">
+            <a href="./index.html">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="contact-info">
+            <p>Email: info@passportreservation.com</p>
+            <p>Phone: +91 77328-73728</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.faq-category h3').forEach(category => {
+            category.addEventListener('click', () => {
+                const items = category.nextElementSibling;
+                items.style.display = items.style.display === 'flex' ? 'none' : 'flex';
+            });
+        });
+
+        document.querySelectorAll('.faq-category .faq-item h4').forEach(item => {
+            item.addEventListener('click', () => {
+                const content = item.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

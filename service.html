@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Passport Reservation</title>
+    <link rel="stylesheet" href="service.css">
+</head>
+<body>
+    <div class="notification-bar">
+        Passport processing time is currently 5 working days.
+    </div>
+    <header>
+        <div class="logo">
+            <img src="./image/passport_logo.jpg" alt="Website Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="./faq.html">FAQs</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="login">Login</button>
+            <button class="signup">Sign Up</button>
+        </div>
+    </header>
+    <section class="hero" id="services">
+        <h1>Our Services</h1>
+        <p>Making Passport Reservations Easier, Faster, and More Reliable.</p>
+    </section>
+    <section class="introduction">
+        <h2>Welcome to Our Services</h2>
+        <p>We offer a wide range of services to streamline your passport application journey. From new applications to renewals, we’re here to make the process stress-free.</p>
+    </section>
+    <section class="service-categories">
+        <h2>Service Categories</h2>
+        <div class="cards">
+            <div class="card">
+                <i class="fas fa-passport"></i>
+                <h3>New Passport Application</h3>
+                <p>Easily apply for a new passport with our step-by-step assistance and secure document uploads.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-sync-alt"></i>
+                <h3>Passport Renewal</h3>
+                <p>Renew your passport seamlessly with our guided renewal process and appointment scheduling.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-times-circle"></i>
+                <h3>Lost/Damaged Passport Replacement</h3>
+                <p>Get help replacing lost or damaged passports quickly and efficiently.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Appointment Scheduling</h3>
+                <p>Schedule your appointment at the nearest passport office at your convenience.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-search"></i>
+                <h3>Application Status Tracking</h3>
+                <p>Stay updated with real-time tracking of your passport application status.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-check-circle"></i>
+                <h3>Document Verification Assistance</h3>
+                <p>Ensure all your documents meet the necessary requirements with expert guidance.</p>
+            </div>
+        </div>
+    </section>
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <i class="fas fa-list-ul"></i>
+                <h3>Select the Service You Need</h3>
+                <p>Browse and choose the service that fits your needs.</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-edit"></i>
+                <h3>Fill Out the Online Form</h3>
+                <p>Complete the necessary details in our easy-to-use form.</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-upload"></i>
+                <h3>Upload Required Documents</h3>
+                <p>Securely upload all required documents for your application.</p>
+            </div>
+            <div class="step">
+                <i class="fas fa-check"></i>
+                <h3>Complete Your Appointment</h3>
+                <p>Visit the scheduled appointment to finalize your application.</p>
+            </div>
+        </div>
+    </section>
+    <section class="pricing">
+        <h2>Pricing</h2>
+        <div class="table">
+            <div class="plan">
+                <h3>New Passport Application</h3>
+                <p>₹4,299</p>
+                <ul>
+                    <li>Includes document verification and guidance.</li>
+                </ul>
+            </div>
+            <div class="plan">
+                <h3>Passport Renewal</h3>
+                <p>₹3,499</p>
+                <ul>
+                    <li>Quick and efficient renewal process.</li>
+                </ul>
+            </div>
+            <div class="plan">
+                <h3>Application Status Tracking</h3>
+                <p>Free</p>
+                <ul>
+                    <li>Real-time updates on your application.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2>Customer Testimonials</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial">
+                <img src="./image/alice.jpeg" alt="Alice">
+                <h3>Alice Johnson</h3>
+                <p>"The process was seamless and the customer service was excellent."</p>
+            </div>
+            <div class="testimonial">
+                <img src="./image/bob.jpeg" alt="Bob">
+                <h3>Bob Smith</h3>
+                <p>"I love how easy it is to track my application status."</p>
+            </div>
+            <div class="testimonial">
+                <img src="./image/charlie.jpeg" alt="Charlie">
+                <h3>Charlie Brown</h3>
+                <p>"Great experience overall, highly recommend!"</p>
+            </div>
+        </div>
+    </section>
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="questions">
+            <div class="question">
+                <h3>What documents are required for a new passport application?</h3>
+                <p>You will need a valid government-issued ID, birth certificate, and two passport photos.</p>
+            </div>
+            <div class="question">
+                <h3>How long does the application process take?</h3>
+                <p>The processing time typically ranges from 4 to 6 weeks, depending on the backlog and urgency.</p>
+            </div>
+            <div class="question">
+                <h3>Can I schedule an appointment online?</h3>
+                <p>Yes, you can easily schedule your appointment directly through our website.</p>
+            </div>
+        </div>
+        <script>
+            const questions = document.querySelectorAll('.faq .question');
+            questions.forEach(question => {
+                question.addEventListener('click', () => {
+                    question.classList.toggle('active');
+                });
+            });
+        </script>
+    </section>
+    <section class="call-to-action">
+        <h2>Ready to Simplify Your Passport Process?</h2>
+        <p>Start now!</p>
+        <button onclick="window.location.href='#home'">Get Started</button>
+    </section>
+    <footer>
+        <div class="footer-links">
+            <a href="./index.html">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="contact-info">
+            <p>Email: info@passportreservation.com</p>
+            <p>Phone: +91-800-123-4567</p>
+        </div>
+    </footer>
+</body>
+</html>
